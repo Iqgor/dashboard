@@ -18,7 +18,22 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Fonts
+
+This project loads its main sans-serif typeface from Google Fonts using Next.js' `next/font/google` pattern, similar to the Geist setup.
+
+The current app font is set in `src/app/layout.js` with the `elms-sans` family and mapped to the CSS variable `--font-elms-sans`. You can swap it for another Google Font by updating the import and the font family in that file.
+
+Example:
+
+```js
+import { elms-sans } from "next/font/google";
+
+const elmsSans = Manrope({
+  variable: "--font-elms-sans",
+  subsets: ["latin"],
+});
+```
 
 ## Learn More
 
