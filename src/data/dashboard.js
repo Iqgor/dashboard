@@ -39,7 +39,7 @@ export const kpis = [
 ];
 
 export const cashFlow = [
-  { month: "Jan", income: 0.5, expense: 2.8 },
+  { month: "Jan", income: 3, expense: 2.8 },
   { month: "Feb", income: 4.8, expense: 3.1 },
   { month: "Mar", income: 5.3, expense: 3.6 },
   { month: "Apr", income: 6.1, expense: 3.9 },
